@@ -1,1 +1,56 @@
-Vitor de lima Sbaraini
+//Descrição
+
+public class Repositor {
+
+    public static void main(String[] args) {
+
+        String nome;
+        String cargo;
+        byte idade;
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("||=====================||");
+        System.out.println("||== SEJA BEM VINDO! ==||");
+        System.out.println("||=====================||");
+
+        System.out.print("Digite seu nome: ");
+        nome = ler.nextLine();
+        System.out.print("Sua Idade: ");
+        idade = ler.nextByte();
+        System.out.print("Seu Cargo: ");
+        cargo = ler.nextLine();
+
+        System.out.println(nome+"Qual das opções você deseja realizar? ");
+        System.out.println(" [1] - Visualizar seus dados");
+        System.out.println(" [2] - Visualizar dados do repositorio Vitor-de-Lima");
+        System.out.println(" [0] - Sair!");
+
+        int opcao;
+        switch (opcao){
+            case 1:
+                System.out.println("Seu nome é:"+nome);
+                System.out.println("Sua idade é:"+idade);
+                System.out.println("Seu Cargo é:"+cargo);
+                break;
+            case 2:
+                System.out.println("||======================================||");
+                System.out.println("||== DADOS DO REPOSITOR VITOR-DE-LIMA ==||");
+                System.out.println("||== NOME: VITOR DE LIMA SBARAINI     ==||");
+                System.out.println("||== IDADE:18 ANOS ==||");
+                System.out.println("||== CARGO: ESTUDANTE ==||");
+                System.out.println("||== DESCRIÇÃO:PROCURANDO CONHECIMENTO\\n" +
+                        "GOSTO DE PROGRAMAR MAS SOU INICANTE!             ==||");
+                System.out.println("||======================================||");
+                break;
+            case 0:
+                System.out.println("Sair:");
+                break;
+            default:
+                System.out.println("Inválido:");
+                break;
+        }while (opcao != 0);
+    }
+}
+
+
